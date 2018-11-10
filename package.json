@@ -1,0 +1,37 @@
+{
+  "name": "wx-api-promisify",
+  "version": "0.1.2",
+  "description": "promisify微信小程序API",
+  "main": "dist/wx-api-promisify.umd.js",
+  "module": "dist/wx-api-promisify.esm.js",
+  "scripts": {
+    "dev": "rollup -c -w",
+    "build": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vv13/wx-api-promisify.git"
+  },
+  "keywords": [
+    "promise"
+  ],
+  "author": "vv13",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vv13/wx-api-promisify/issues"
+  },
+  "homepage": "https://github.com/vv13/wx-api-promisify#readme",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.1.5",
+    "@babel/plugin-external-helpers": "^7.0.0",
+    "@babel/preset-env": "^7.1.5",
+    "rollup": "^0.67.0",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^3.4.0"
+  }
+}
