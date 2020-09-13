@@ -1,9 +1,10 @@
 {
   "name": "wx-api-promisify",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "promisify微信小程序API",
   "main": "dist/wx-api-promisify.umd.js",
   "module": "dist/wx-api-promisify.esm.js",
+  "types": "index.d.ts",
   "scripts": {
     "dev": "rollup -c -w",
     "build": "rollup -c",
@@ -23,7 +24,8 @@
   },
   "homepage": "https://github.com/vv13/wx-api-promisify#readme",
   "files": [
-    "dist"
+    "dist",
+    "index.d.ts"
   ],
   "dependencies": {},
   "devDependencies": {

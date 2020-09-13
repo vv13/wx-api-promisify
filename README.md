@@ -9,7 +9,7 @@
 
 ```
 
-使用Proxy + ES Promise实现，核心代码只有10行
+使用Proxy + ES Promise实现，核心代码只有10行，含有 TypeScript 类型定义。
 
 ## 安装
 ```
@@ -17,16 +17,16 @@ $ npm i wx-api-promisify
 ```
 
 ## 示例
-若您的工程支持，推荐使用async/await。以下为获取用户信息->下载文件->保存到相册的Promise示例：
+若您的工程支持，推荐使用async/await。以下为获取用户信息->下载头像->保存到相册的Promise示例：
 ```
 import wxPromise from 'wx-api-promisify'
 
 Page({
   ...
   getUserInfo() {
-    wxPromise.getUserInfo()
-      .then(({ userInfo: { avatarUrl } }) => wxPromise.downloadFile({ url: avatarUrl }))
-      .then(({ tempFilePath }) => wxPromise.saveImageToPhotosAlbum({ filePath: tempFilePath })
+    const { userInfo: { avatarUrl } } = await wxPromise.getUserInfo()
+    const { tempFilePath } = await wxPromise.downloadFile({ url: avatarUrl }))
+    await wxPromise.saveImageToPhotosAlbum({ filePath: tempFilePath })
   },
 })
 ```
