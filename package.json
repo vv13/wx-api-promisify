@@ -1,6 +1,6 @@
 {
   "name": "wx-api-promisify",
-  "version": "0.1.4",
+  "version": "0.2.1",
   "description": "promisify微信小程序API",
   "main": "dist/wx-api-promisify.umd.js",
   "module": "dist/wx-api-promisify.esm.js",

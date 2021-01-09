@@ -25,7 +25,7 @@ Page({
   ...
   getUserInfo() {
     const { userInfo: { avatarUrl } } = await wxPromise.getUserInfo()
-    const { tempFilePath } = await wxPromise.downloadFile({ url: avatarUrl }))
+    const { tempFilePath } = await wxPromise.downloadFile({ url: avatarUrl })
     await wxPromise.saveImageToPhotosAlbum({ filePath: tempFilePath })
   },
 })
